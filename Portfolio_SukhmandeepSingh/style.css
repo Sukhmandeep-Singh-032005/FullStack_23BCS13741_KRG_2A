@@ -1,0 +1,298 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e3d8f3, #4159a5);
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Semi-transparent Glass Effect */
+header, .about, .projects, .resume, .contact {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    padding: 25px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+header:hover, .about:hover, .projects:hover, .resume:hover, .contact:hover {
+    transform: scale(1.02);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 30px;
+    padding: 20px;
+}
+
+.header-text {
+    max-width: 600px;
+}
+
+#header-photo {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Greeting */
+.greeting {
+    font-size: 3em;
+    background: linear-gradient(90deg, #5c4dcc, #142153);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navigation {
+    background-color: rgba(58, 65, 138, 0.358);
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.navigation:hover {
+    background-color: rgb(168, 158, 208);
+}
+
+#intro {
+    max-width: 700px;
+    margin: 30px auto;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.headings{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content_inside_sections{
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+ul {
+    padding-left: 0px; 
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Sections */
+.about h2, .projects h2, .resume p, .contact h2 {
+    color: #5c267e;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+/* Project Cards */
+.project {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Center the Contact Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centers everything inside */
+    justify-content: center;
+    height: 100vh; /* Makes sure it fills the screen */
+    text-align: center;
+}
+
+/* Center the Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: center; /* Center the flex items horizontally */
+    align-items: center;  /* Center vertically */
+    width: 90%;
+    max-width: 900px;
+    gap: 20px;
+}
+
+
+/* Contact Box Glass Effect */
+.contact-info, .contact-form {
+    flex: 1;
+    padding: 25px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover, .contact-form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Info Styling */
+.contact-info h3, .contact-form h3 {
+    color: #5c4dcc;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contact-info p {
+    color: black;
+    font-size: 1em;
+    text-align: center;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 1em;
+}
+
+.contact-detail img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form elements */
+    width: 100%;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 90%; /* Adjust width for better spacing */
+    max-width: 500px; /* Prevent fields from becoming too wide */
+    padding: 12px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    color: #000000;
+    font-size: 1em;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    text-align: left; /* Ensures text is aligned properly */
+}
+
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #9c4dcc;
+    transform: scale(1.01);
+}
+
+/* Send Button */
+.contact-form button {
+    padding: 15px;
+    background: linear-gradient(90deg, #9c4dcc, #a3b6ff);
+    color: #000000;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(90deg, #a3b6ff, #9c4dcc);
+    transform: translateY(-2px);
+}
+
+
+footer {
+    background: #fff; 
+    color: #333;  
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    max-width: 600px;
+    width: 100%;
+}
+
+.footer-content h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #000;
+}
+
+.footer-content p {
+    color: #666;
+    font-size: 1em;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #888888;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    padding-top: 15px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #header-photo {
+        margin-top: 15px;
+    }
+}

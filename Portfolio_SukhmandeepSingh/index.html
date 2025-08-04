@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukhmandeep Singh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-text">
+                <h1 class="greeting">Hello everyone,</h1>
+                <h1 class="greeting">Sukhmandeep Singh here!</h1>
+                <hr>
+                <p>Cybersecurity | Web Development | Data Structures and Algorithms | Video Editing</p>
+            </div>
+            <img src="SukhmandeepSinghPhoto.png" id="header-photo" alt="Sukhmandeep Singh">
+        </div>
+        <nav>
+            <ul>
+                <button class="navigation" onclick="scrollToSection('home')">Home</button>
+                <button class="navigation" onclick="scrollToSection('about')">About</button>
+                <button class="navigation" onclick="scrollToSection('projects')">Projects</button>
+                <button class="navigation" onclick="scrollToSection('resume')">Resume</button>
+                <button class="navigation" onclick="scrollToSection('contact')">Contact</button>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <p id="intro">Welcome to my portfolio! I specialize in Cybersecurity, Front-end development, and ethical hacking. My goal is to create secure, efficient, and visually appealing web applications. Explore my work and get to know more about my journey in tech!</p>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+    <section id="about" class="section">
+        <h2 class="headings">About Me</h2>
+        <p class="content_inside_sections">I'm a passionate tech enthusiast with a strong interest in Cybersecurity, Web Development, and Ethical Hacking. My journey began with coding simple websites, and over time, I delved into the world of security and data structures. I enjoy solving complex problems, learning new technologies, and continuously improving my skills. Apart from tech, I love video editing and exploring creative ways to present information.</p>
+    </section>
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <section id="projects" class="section">
+        <h2 class="headings">Projects</h2>
+        <br>
+        <p class="content_inside_sections">Here are some of my featured projects:</p>
+        <ul>
+            <li class="content_inside_sections"><strong>AR Video Filter:</strong> Created an augmented reality video filter to superimpose sunglasses over the eyes of the user.</li>
+            <li class="content_inside_sections"><strong>Portfolio Website:</strong> A dynamic, responsive portfolio built with HTML, CSS, and JavaScript.</li>
+            <li class="content_inside_sections"><strong>Video and Photo Editing Projects:</strong> Engaging and high-quality video and photo edits using DaVinci Resolve and GIMP.</li>
+            <li class="content_inside_sections"><strong>Basic Calculator:</strong> A basic calculator app using HTML5, CSS3 and JavaScript.</li>
+            <li class="content_inside_sections"><strong>Plant disease detection using Nerual Networks:</strong> Created a program using computer vision to help farmers detect diseases in plants.</li>
+
+        </ul>
+    </section>
+
+    <br><br><br><br><hr><br>
+
+    <section id="resume" class="section">
+        <h2 class="headings">Resume</h2>
+        <br>
+        <p class="content_inside_sections">Want to learn more about my experience and skills? Download my resume <a href="ResumeSukhmandeepSingh.pdf" target="_blank">here</a>. It includes my educational background, work experience, projects, and technical skills.</p>
+    </section>
+
+    <br><br><br><br><hr><br><br><br>
+    <section id="contact" class="section">
+        <h2 class="headings">Contact Me</h2>
+        <br>
+        <br>
+        <p class="content_inside_sections">Have a project in mind or want to chat? Feel free to reach out!</p>
+    
+        <div class="contact-container">
+            <!-- Left Side: Contact Info -->
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>You can reach me through any of these channels or use the form to send a message.</p>
+    
+                <div class="contact-detail">
+                    <img src="EmailLogo.png" class="icon"> 
+                    <p><strong>Email:</strong> soemrndomguy@gmail.com</p>
+                </div>
+    
+                <div class="contact-detail">
+                    <img src="PhoneLogo.png" class="icon"> 
+                    <p><strong>Phone:</strong> +91 79867-06934</p>
+                </div>
+    
+                <div class="contact-detail">
+                    <img src="LinkedinLogo.png" class="icon"> 
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sukhmandeep-singh-/" target="_blank">Sukhmandeep Singh</a></p>
+                </div>
+    
+                <div class="contact-detail">
+                    <img src="LocationLogo.png" class="icon"> 
+                    <p><strong>Location:</strong> Chandigarh, India</p>
+                </div>
+            </div>
+    
+            <!-- Right Side: Contact Form -->
+            <div class="contact-form">
+                <h3>Send Me a Message</h3>
+                <form action="mailto:soemrndomguy@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your Message..." rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <br><br><br><br><br><br><hr>
+
+
+    <footer>
+        <div class="footer-content">
+            <h2>My Portfolio</h2>
+            <p>Crafting secure, innovative, and efficient digital experiences.</p>
+            <div class="social-icons">
+                <a href="https://github.com/Uchiha-Itachi-21" target="_blank"><img src="GitHubLogo.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/sukhmandeep-singh-/" target="_blank"><img src="LinkedinLogo.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 Sukhmandeep. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
