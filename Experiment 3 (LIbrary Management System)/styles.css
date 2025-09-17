@@ -1,0 +1,159 @@
+/* Material 3 Color System */
+:root {
+  --primary: #6750a4;
+  --on-primary: #ffffff;
+  --primary-container: #eaddff;
+  --on-primary-container: #21005d;
+
+  --secondary: #625b71;
+  --on-secondary: #ffffff;
+  --secondary-container: #e8def8;
+  --on-secondary-container: #1d192b;
+
+  --error: #b3261e;
+  --on-error: #ffffff;
+
+  --background: #fdfcff;
+  --surface: #ffffff;
+  --on-surface: #1c1b1f;
+
+  --outline: #79747e;
+  --shadow: rgba(0,0,0,0.2);
+}
+
+body {
+  font-family: "Roboto", "Google Sans", sans-serif;
+  background: var(--background);
+  margin: 0;
+  padding: 0;
+  color: var(--on-surface);
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin: 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--secondary);
+}
+
+/* Cards */
+.card {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-radius: 28px;
+  box-shadow: 0 6px 16px var(--shadow);
+  transform: translateY(-2px);
+}
+
+.form-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid var(--outline);
+  border-radius: 16px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  transition: border-color 0.2s, border-radius 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--primary);
+  border-radius: 22px;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.04);
+  border-radius: 32px;
+}
+
+button.filled {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+
+button.tonal {
+  background: var(--secondary-container);
+  color: var(--on-secondary-container);
+}
+
+button.delete {
+  background: var(--error);
+  color: var(--on-error);
+}
+
+/* Book list */
+#bookList {
+  list-style: none;
+  padding: 0;
+}
+
+#bookList li {
+  background: var(--primary-container);
+  color: var(--on-primary-container);
+  margin-bottom: 15px;
+  padding: 16px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+#bookList li:hover {
+  border-radius: 28px;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px var(--shadow);
+}
+
+#bookList li strong {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.actions button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}

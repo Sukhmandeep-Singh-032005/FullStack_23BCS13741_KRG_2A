@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Material 3 Library</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>📚 My Library</h1>
+      <p class="subtitle">Powered by Material You</p>
+    </header>
+
+    <section class="card">
+      <h2 class="form-title">Add / Update Book</h2>
+      <form id="bookForm">
+        <input type="text" id="title" placeholder="Book Title" required />
+        <input type="text" id="author" placeholder="Author" required />
+        <button type="submit" id="submitBtn" class="filled">➕ Add Book</button>
+      </form>
+    </section>
+
+    <section class="search-box card">
+      <input type="text" id="search" placeholder="🔍 Search by title..." />
+      <button id="searchBtn" class="tonal">Search</button>
+    </section>
+
+    <ul id="bookList"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
